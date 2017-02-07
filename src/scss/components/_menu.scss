@@ -1,0 +1,225 @@
+/*========================   Menu   ==========================*/
+nav {
+  display: inline-block;
+}
+
+//--------------------------------------------------------------
+//                       Menu Styles
+//--------------------------------------------------------------
+.sf-menu {
+  display: inline-block;
+  font: 400 12px/18px $default-font;
+  text-transform: none;
+  text-align: left;
+  @include clearfix;
+  > li {
+    position: relative;
+    float: left;
+    & + li {
+      margin-left: 25px;
+    }
+  }
+  a {
+    display: inline-block;
+    position: relative;
+    span {
+      border-bottom: 1px dashed;
+      @include transition(0.4s ease all);
+    }
+    &:hover {
+      span {
+        border-bottom: 1px dashed transparent;
+      }
+    }
+  }
+}
+
+//--------------------------------------------------------------
+//                     Menu item styles
+//--------------------------------------------------------------
+.sf-menu {
+  > li {
+    > a {
+      color: $default-header;
+      text-decoration: none;
+      @include transition(0.3s ease);
+    }
+
+    &.sfHover > a, > a:hover, &.active > a {
+      color: $white;
+    }
+  }
+}
+
+//--------------------------------------------------------------
+//                   Sub menu lvl1 styles
+//--------------------------------------------------------------
+.sf-menu ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 190px;
+  margin-top: 11px;
+  padding: 20px;
+  background: $default-dark;
+  z-index: 101;
+  @include box-sizing(border-box);
+}
+
+//--------------------------------------------------------------
+//                 Sub menu lvl1 item styles
+//--------------------------------------------------------------
+.sf-menu ul {
+  > li {
+    > a {
+      font: 400 12px/18px $default-font;
+      color: $default-header;
+      text-decoration: none;
+      @include transition(0.3s ease);
+    }
+
+    &.sfHover > a, > a:hover, &.active > a {
+      color: $white;
+    }
+    & + li {
+      margin-top: 10px;
+    }
+  }
+}
+
+//--------------------------------------------------------------
+//                   Sub menu lvl2 styles
+//--------------------------------------------------------------
+.sf-menu ul ul {
+  width: 168px;
+  margin-top: 3px;
+  z-index: 4;
+  top: 22px;
+  left: 192px;
+  padding: 5px 15px;
+  position: static;
+}
+
+//--------------------------------------------------------------
+//                 Sub menu lvl2 item styles
+//--------------------------------------------------------------
+.sf-menu ul ul {
+  > li {
+    background: none;
+    > a {
+      @include transition(0.3s ease);
+    }
+
+    &.sfHover > a, > a:hover {
+      background: none;
+    }
+  }
+}
+
+//--------------------------------------------------------------
+//                      sf-with-ul styles
+//--------------------------------------------------------------
+.sf-menu > li > .sf-with-ul {
+  position: relative;
+
+  &:before {
+    content: "\f107";
+    position: absolute;
+    text-decoration: none;
+    left: calc(100% + 5px);
+    top: 4px;
+    font: 400 12px/12px $fa;
+  }
+}
+
+.sf-menu > li > ul > li .sf-with-ul {
+  position: relative;
+
+  &:after {
+    position: absolute;
+    @include transform(rotate(90deg));
+    left: 155px;
+    top: -8px;
+    margin-left: 0px;
+    content: $fa-angle-right;
+    font: 400 15px/35px $fa;
+  }
+}
+
+//--------------------------------------------------------------
+//                        Responsive
+//--------------------------------------------------------------
+@media (max-width: 1000px) {
+  .mmenu {
+    position: absolute;
+    cursor: pointer;
+    outline: none;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 198;
+    background: url("../images/mobile_view.png") no-repeat center center;
+  }
+  .mmenu-overlay_full {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background: rgba(50, 50, 50, 0.5);
+    z-index: 197;
+  }
+  .mmenu-overlay_full-nonscroll {
+    overflow: hidden;
+  }
+  .sf-menu {
+    float: right;
+    position: fixed;
+    overflow: auto;
+    width: 250px;
+    height: 100%;
+    top: 40px;
+    left: -250px;
+    z-index: 198;
+    background: rgba($header-bg, 0.85);
+    @include clearfix();
+    @include transition(0.4s ease all);
+    &.opened {
+      left: 0;
+    }
+    > li {
+      width: 100%;
+      text-align: left;
+      box-sizing: border-box;
+      padding: 10px 10px;
+      a {
+        border: none;
+      }
+      &:first-child {
+        margin-top: 10px;
+      }
+      & + li {
+        margin-left: 0;
+      }
+    }
+  }
+  .sf-menu ul {
+    display: block !important;
+    position: relative;
+    background: transparent;
+    padding: 0 0 0 20px;
+    width: 100%;
+    li {
+      opacity: 1 !important;
+    }
+  }
+  .sf-menu ul ul {
+    width: 100%;
+    padding: 5px 0 0 20px;
+  }
+  .sf-with-ul:before,
+  .sf-with-ul:after {
+    display: none;
+  }
+}

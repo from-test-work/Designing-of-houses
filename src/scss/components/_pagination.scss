@@ -1,0 +1,122 @@
+//========================================================
+//                    Pagination
+//=========================================================
+.pagination {
+  display: block;
+  //text-align: center;
+  margin-bottom: 80px;
+  .pag {
+    display: inline-block;
+    @include clearfix;
+    li {
+      display: inline-block;
+      float: left;
+      > a {
+        color: $black;
+        display: inline-block;
+        text-align: center;
+        width: 24px;
+        height: 24px;
+        background: $white;
+        border: 2px solid lighten(desaturate(adjust-hue($secondary, 1.8375), 43.9453), 43.9216);
+        line-height: 22px;
+        text-decoration: none;
+        @include border-radius(4px);
+        @include box-shadow(0px 2px 3px 0px lighten(saturate(adjust-hue(#818181, 204.0000), 4.8544), 29.2157));
+      }
+      &.active {
+        > a {
+          border: 2px solid transparent;
+          background: lighten(desaturate(adjust-hue($secondary, 1.8375), 43.9453), 43.9216);
+          color: $black;
+          font-weight: 700;
+        }
+        &:hover{
+          a{
+            background: lighten(desaturate(adjust-hue($secondary, 1.8375), 43.9453), 43.9216);
+            color: $black;
+          }
+        }
+      }
+      &:hover {
+        > a {
+          border: 2px solid transparent;
+          background: $danger-color;
+          font-weight: 700;
+          color: $white;
+        }
+      }
+      & + li {
+        margin-left: 9px;
+      }
+      .first, .last, .next, .prew {
+        position: relative;
+        background: $danger-color;
+        border: 2px solid $danger-color;
+        &:before, &:after{
+          position: absolute;
+          color: $white;
+          font: 400 14px/22px $fa;
+        }
+      }
+      //<<
+      .first{
+        &:before{
+          content: '\f053';
+          left: 1px;
+
+        }
+        &:after{
+          content: '\f053';
+          right: 1px;
+        }
+      }
+      //>>
+      .last{
+        &:before{
+          content: '\f054';
+          right: 0;
+
+        }
+        &:after{
+          content: '\f054';
+          left: 2px;
+        }
+      }
+
+      //<
+      .next{
+        &:before{
+          content: '\f053';
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+      //>
+      .prew{
+        &:before{
+          content: '\f054';
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+
+
+    }
+    .dotet {
+      position: relative;
+      top: 0;
+    }
+  }
+}
+
+@media(max-width: 479px) {
+  .pagination {
+    display: block;
+    text-align: center;
+    .pag {
+      display: inline-block;
+    }
+  }
+}
+

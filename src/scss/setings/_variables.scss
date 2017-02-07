@@ -1,0 +1,45 @@
+//========================================================
+//                     Variables
+//=========================================================
+//Colors
+$white: #ffffff;
+$black: #000000;
+$default: #818181;
+$primary: #fac800;
+$secondary: #173866;
+$link-color: #478dc0;
+$danger-color: #f12547;
+$success-color: #6eb43c;
+
+//Backgrounds
+$header-bg: $black;
+$content-bg: $white;
+$footer-bg: $black;
+
+//Fonts
+@import "_material-icons.scss";
+$default-font: 'Roboto', sans-serif;
+$linecons-font: 'Linecons';
+$fa: 'FontAwesome';
+$material-font: "Material Design Icons";
+$icons1: "\e001", "\e000", "\e007";
+$i: 0;
+
+
+//$aleba-colors: #ff3246, #fac800, #6eb43c, #64aaff;
+$aleba-colors: (
+        color-1: #ff3246,
+        color-2: #fac800,
+        color-3: #6eb43c,
+        color-4: #64aaff,
+);
+
+//$social-clrs: #56789c, #3b579d, #f2720c, #1bb2e9;
+//$social-footer-clrs: #7795c4, #526191, #e79a4b, #e16c4d, #72c2fc;
+
+$social-clrs: $white, $white, $white, $white;
+$social-footer-clrs: $default, #526191, #e79a4b, #e16c4d, #72c2fc;
+
+body * {
+        //background-color: rgba(0, 0, 0, .05);
+}

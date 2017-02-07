@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    //= templates/meta-link.html
+    <title>Aleba Webmaster</title>
+</head>
+<body>
+<div class="page">
+    <!--============================ HEADER =============================-->
+    <header class="">
+        <section class="well__header header-bg">
+            //= templates/header.html
+        </section>
+        <section class="well__relative">
+            //= templates/nav.html
+        </section>
+        <div class="rd-navbar-wrap hidden-sm hidden-md hidden-lg">
+            <nav class="rd-navbar">
+                <div class="rd-navbar-inner">
+                    <!-- RD Navbar Panel -->
+                    <div class="rd-navbar-panel">
+                        <div class="rd-navbar-panel-canvas"></div>
+
+                        <!-- RD Navbar Toggle -->
+                        <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span>
+                        </button>
+                        <!-- END RD Navbar Toggle -->
+
+                        <!-- RD Navbar Brand -->
+                        <div class="rd-navbar-brand">
+                            <a href="index.html" class="brand-name"><img src="images/brand.png" alt=""
+                                                                         class="brand"></a>
+                        </div>
+                        <!-- END RD Navbar Brand -->
+
+                        <!-- RD Navbar Collapse Toggle -->
+                        <button class="rd-navbar-collapse-toggle" data-rd-navbar-toggle=".rd-navbar-collapse">
+                            <span></span>
+                        </button>
+                        <div class="rd-navbar-nav-wrap">
+                            <!-- RD Navbar Nav -->
+                            <ul class="rd-navbar-nav" data-type="navbar">
+                                <li>
+                                    <a href="index.html">Главная</a>
+                                </li>
+                                <li>
+                                    <a href="">Каталог</a>
+                                </li>
+                                <li>
+                                    <a href="search-projects.html">Поиск проектов</a>
+                                </li>
+                                <li>
+                                    <a href="">Заказать проект</a>
+                                </li>
+                                <li>
+                                    <a href="all-news.html">Новости</a>
+                                </li>
+                                <li>
+                                    <a href="">Частые вопросы</a>
+                                </li>
+                                <li>
+                                    <a href="all-articles.html">Статьи</a>
+                                </li>
+                                <li>
+                                    <a href="">Контакты</a>
+                                </li>
+                            </ul>
+                            <!-- END RD Navbar Nav -->
+                        </div>
+                        <ul class="rd-navbar-collapse">
+                            <li>
+                                <a href="selection-region-city.html">Владивосток</a>
+                            </li>
+                            <li>
+                                <a href="#">Войти</a>
+                            </li>
+                            <li>
+                                <a href="registration.html">Регистрация</a>
+                            </li>
+                        </ul>
+                        <!--END RD Navbar Collapse Toggle -->
+                        <!-- RD Navbar Search Toggle -->
+                        <div class="rd-navbar-search-wrap">
+                            <button class="rd-navbar-search-toggle" data-rd-navbar-toggle=".rd-navbar-search">
+                                <span></span>
+                            </button>
+                            <div class="rd-navbar-search">
+                                <form action="" method="post">
+                                    <div class="form-group">
+                                        <input id="rd-navbar-search-input" type="text" class="form-control"
+                                               placeholder="Search">
+                                    </div>
+                                    <button type="submit" class="material-icons-search"></button>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- END RD Navbar Search Toggle -->
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--============================  MAIN  =============================-->
+    <main class="page-catalog">
+        <!-- Хлебные крошки -->
+        <section class="well_breadcrumb">
+            <div class="container">
+                <!--=== Навигация ===-->
+                <ul xmlns:v="http://rdf.data-vocabulary.org/#" class="navigation">
+                    <li typeof="v:Breadcrumb">
+                        <a rel="v:url" property="v:title" href="index.html">Главная</a>
+                    </li>
+                    <li typeof="v:Breadcrumb">
+                        <a rel="v:url" property="v:title" href="all-catalog.html">Каталог</a>
+                    </li>
+                    <li typeof="v:Breadcrumb">
+                        <a rel="v:url" property="v:title" class="active" href="all-catalog.html">Проект современного
+                            дома из газобетона с гаражом и мансардой</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="container">
+
+                <div class="well3" >
+                    <a onclick="openPopUp('reg-company');">Заказать звонок</a>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section class="hidden">
+            <!--subscribeForm
+            -->
+
+                <form action="#" id="reg-company" class="reg-company">
+                    <h2>Регистрация компании</h2>
+                    <div class="input-box">
+                        <ul class=" input-list item-list">
+                            <li>
+                                <!--<div class="input-list">-->
+                                <label>
+                                    <input class="" type="text" value="" placeholder="Логин" required="">
+                                </label>
+                                <!--</div>-->
+                            </li>
+                            <li>
+                                <!--<div class="input-list">-->
+                                <label>
+                                    <input class="" type="email" value="" placeholder="Адрес электронной почты"
+                                           required="">
+                                </label>
+                                <!--</div>-->
+
+                            </li>
+                            <li>
+                                <!--<div class="input-list">-->
+                                <label>
+                                    <input class="" type="password" value="" placeholder="Пароль" required="">
+                                </label>
+                                <!--</div>-->
+                            </li>
+                            <li>
+                                <!--<div class="input-list">-->
+                                <label>
+                                    <input class="" type="password" value="" placeholder="Повторите пароль" required="">
+                                </label>
+                                <!--</div>-->
+                            </li>
+                        </ul>
+                    </div>
+                    <batton type="submit" class="btn1 btn-style1 btn-effect1 offs2">Продолжить</batton>
+                </form>
+
+        </section>
+
+    </main>
+
+    <!--============================ FOOTER =============================-->
+    <footer>
+        //= templates/footer.html
+    </footer>
+</div>
+
+
+<!--coded by AlexB.-->
+</body>
+</html>
+<!--Links-->
+<link rel="stylesheet" href="css/rd-navbar.css"/>
+<link rel="stylesheet" href="css/jquery.fancybox.css"/>
+<link rel="stylesheet" href="css/styles.css">
+<!--JS-->
+<script type="text/javascript" src="js/core.js"></script>
+<script type="text/javascript" src="js/components.js"></script>
+<script type="text/javascript" src="js/script.js"></script>

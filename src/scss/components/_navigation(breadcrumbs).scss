@@ -1,0 +1,35 @@
+/*========================================================
+                     Breadcrumbs
+=========================================================*/
+/*==================    Navigation    ======================*/
+.navigation {
+  font: 300 12px/17px $default-font;
+  display: block;
+  li {
+    position: relative;
+    display: inline-block;
+    a {
+      color: $black;
+    }
+    .active {
+      color: lighten(desaturate(adjust-hue($secondary, 1.8375), 43.9453), 43.9216);
+      text-decoration: none;
+    }
+    &:before {
+      position: absolute;
+      content: '\f054';
+      font: 400 12px/1.2 $fa;
+      top: 3px;
+      color: $danger-color;
+      left: -15px;
+    }
+    &:first-child {
+      &:before {
+        display: none;
+      }
+    }
+  }
+  li + li {
+    margin-left: 20px;
+  }
+}

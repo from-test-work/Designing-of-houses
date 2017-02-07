@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    //= templates/meta-link.html
+    <title>Aleba Webmaster</title>
+</head>
+<body>
+<div class="page">
+    <!--============================ HEADER =============================-->
+    <header class="">
+        <section class="well__header header-bg">
+            //= templates/header.html
+        </section>
+        <section class="well__relative">
+            //= templates/nav.html
+        </section>
+        <div class="rd-navbar-wrap hidden-sm hidden-md hidden-lg">
+            <nav class="rd-navbar">
+                <div class="rd-navbar-inner">
+                    <!-- RD Navbar Panel -->
+                    <div class="rd-navbar-panel">
+                        <div class="rd-navbar-panel-canvas"></div>
+
+                        <!-- RD Navbar Toggle -->
+                        <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span>
+                        </button>
+                        <!-- END RD Navbar Toggle -->
+
+                        <!-- RD Navbar Brand -->
+                        <div class="rd-navbar-brand">
+                            <a href="index.html" class="brand-name"><img src="images/brand.png" alt=""
+                                                                         class="brand"></a>
+                        </div>
+                        <!-- END RD Navbar Brand -->
+
+                        <!-- RD Navbar Collapse Toggle -->
+                        <button class="rd-navbar-collapse-toggle" data-rd-navbar-toggle=".rd-navbar-collapse">
+                            <span></span>
+                        </button>
+                        <div class="rd-navbar-nav-wrap">
+                            <!-- RD Navbar Nav -->
+                            <ul class="rd-navbar-nav" data-type="navbar">
+                                <li>
+                                    <a href="index.html">Главная</a>
+                                </li>
+                                <li>
+                                    <a href="">Каталог</a>
+                                </li>
+                                <li>
+                                    <a href="search-projects.html">Поиск проектов</a>
+                                </li>
+                                <li>
+                                    <a href="">Заказать проект</a>
+                                </li>
+                                <li>
+                                    <a href="all-news.html">Новости</a>
+                                </li>
+                                <li>
+                                    <a href="">Частые вопросы</a>
+                                </li>
+                                <li>
+                                    <a href="all-articles.html">Статьи</a>
+                                </li>
+                                <li>
+                                    <a href="">Контакты</a>
+                                </li>
+                            </ul>
+                            <!-- END RD Navbar Nav -->
+                        </div>
+                        <ul class="rd-navbar-collapse">
+                            <li>
+                                <a href="selection-region-city.html">Владивосток</a>
+                            </li>
+                            <li>
+                                <a href="#">Войти</a>
+                            </li>
+                            <li>
+                                <a href="registration.html">Регистрация</a>
+                            </li>
+                        </ul>
+                        <!--END RD Navbar Collapse Toggle -->
+                        <!-- RD Navbar Search Toggle -->
+                        <div class="rd-navbar-search-wrap">
+                            <button class="rd-navbar-search-toggle" data-rd-navbar-toggle=".rd-navbar-search">
+                                <span></span>
+                            </button>
+                            <div class="rd-navbar-search">
+                                <form action="" method="post">
+                                    <div class="form-group">
+                                        <input id="rd-navbar-search-input" type="text" class="form-control"
+                                               placeholder="Search">
+                                    </div>
+                                    <button type="submit" class="material-icons-search"></button>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- END RD Navbar Search Toggle -->
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--============================  MAIN  =============================-->
+    <main>
+        <!-- Описание портала -->
+        <section class="well3">
+            <div class="container">
+                <h1>Cервис подбора и продажи проектов во всех регионах РФ!</h1>
+
+                <div class="SEO-text">
+                    <p>
+                        Вы можете купить проект онлайн на нашем сайте,
+                        а также оставить заявку на строительство дома по проекту
+                        для наших партнеров в регионах и получить скидку!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Основные фильтры поиска -->
+        <section class="well4">
+            <div class="container">
+                <form action="" class="small-filter show">
+                    //= templates/small_filter.html
+                </form>
+                <form action="" class="big-filter box-shadow__bottom hide">
+                    //= templates/big_filter.html
+                    <div class="row well2">
+                        <div class="col-md-2 col-md-offset-7">
+                            <a class="on-small-filter">Простой фильтр</a>
+                        </div>
+                        <div class="col-md-3 clean">
+                            <batton type="submit" class="btn1 btn-style1 btn-effect1 offs2">Показать проекты</batton>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Слайдер Популярные объекты -->
+        <section class="well2">
+            <div class="container">
+                <!--=== CustomScroll ====-->
+                <h2 class="h2">Популярные объекты</h2>
+
+                <div class="customScroll">
+                    <ul class="customScroll-list" data-mcs-theme="rounded">
+                        <!--=== 1 li ====-->
+                        <li class="customScroll-list-li">
+                            //= templates/customScroll-forma.html
+                        </li>
+                        <!--=== 2 li ====-->
+                        <li class="customScroll-list-li">
+                            //= templates/customScroll-forma.html
+                        </li>
+                        <!--=== 3 li ====-->
+                        <li class="customScroll-list-li">
+                            //= templates/customScroll-forma.html
+                        </li>
+                        <!--=== 4 li ====-->
+                        <li class="customScroll-list-li">
+                            //= templates/customScroll-forma.html
+                        </li>
+                        <!--=== 5 li ====-->
+                        <li class="customScroll-list-li">
+                            //= templates/customScroll-forma.html
+                        </li>
+                        <!--=== 6 li ====-->
+                        <li class="customScroll-list-li">
+                            //= templates/customScroll-forma.html
+                        </li>
+                        <!--=== 7 li ====-->
+                        <li class="customScroll-list-li">
+                            //= templates/customScroll-forma.html
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Слайдер Рекомендуемые объекты -->
+        <section class="well2">
+            <div class="container">
+                <!--=== CustomScroll ====-->
+                <h2 class="h2">Рекомендуемые объекты</h2>
+
+                <div class="customScroll">
+                    <ul class="customScroll-list" data-mcs-theme="rounded">
+                        <!--=== 1 li ====-->
+                        <li class="customScroll-list-li">
+                            //= templates/customScroll-forma.html
+                        </li>
+                        <!--=== 2 li ====-->
+                        <li class="customScroll-list-li">
+                            //= templates/customScroll-forma.html
+                        </li>
+                        <!--=== 3 li ====-->
+                        <li class="customScroll-list-li">
+                            //= templates/customScroll-forma.html
+                        </li>
+                        <!--=== 4 li ====-->
+                        <li class="customScroll-list-li">
+                            //= templates/customScroll-forma.html
+                        </li>
+                        <!--=== 5 li ====-->
+                        <li class="customScroll-list-li">
+                            //= templates/customScroll-forma.html
+                        </li>
+                        <!--=== 6 li ====-->
+                        <li class="customScroll-list-li">
+                            //= templates/customScroll-forma.html
+                        </li>
+                        <!--=== 7 li ====-->
+                        <li class="customScroll-list-li">
+                            //= templates/customScroll-forma.html
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Статьи плитка -->
+        <section class="well3 well3-mod1">
+            <div class="container container_relative">
+                <h2>Статьи</h2>
+                <a class="more" href="all-articles.html">Смотреть все статьи</a>
+
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        //= templates/elem-tile.html
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        //= templates/elem-tile.html
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        //= templates/elem-tile.html
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        //= templates/elem-tile.html
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Последние отзывы -->
+        <section class="well3 well3-mod1">
+            <div class="container container_relative">
+                <h2>Последние отзывы</h2>
+                <a class="more" href="all-reviews.html">Смотреть все отзывы</a>
+
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        //= templates/elem-reviews.html
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        //= templates/elem-reviews.html
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        //= templates/elem-reviews.html
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--============================ FOOTER =============================-->
+    <footer>
+        //= templates/footer.html
+    </footer>
+</div>
+
+
+<!--coded by AlexB.-->
+</body>
+</html>
+<!--Links-->
+<link rel="stylesheet" href="css/rd-navbar.css"/>
+<link rel="stylesheet" href="css/mCustomScrollbar.css"/>
+<link rel="stylesheet" href="css/ion.rangeSlider.css"/>
+<link rel="stylesheet" href="css/ion.rangeSlider.skinHTML5.css"/>
+<link rel="stylesheet" href="css/styles.css">
+<!--JS-->
+<script type="text/javascript" src="js/core.js"></script>
+<script type="text/javascript" src="js/components.js"></script>
+<script type="text/javascript" src="js/script.js"></script>

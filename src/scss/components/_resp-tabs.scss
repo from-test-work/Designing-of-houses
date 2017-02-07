@@ -1,0 +1,106 @@
+/*=================       Tabs     ======================*/
+
+/* Стилизируем список вкладок */
+.resp-tabs-list {
+  font-size: 20px;
+  font-weight: 400;
+  display: block;
+  //text-transform: uppercase;
+  font-family: $default-font;
+
+  /* Стилизируем каждую вкладку по умолчанию */
+  li {
+    color: $white;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 24px;
+    border-radius: 3px;
+    padding: calc((24px - 18px) / 2) 10px;
+    &:hover {
+      background: $white;
+      color: $default;
+    }
+    &.active {
+      background: $white;
+      color: $default;
+    }
+  }
+}
+
+/* Стилизируем вкладку в аккордион версии */
+.resp-accordion {
+  color: $default;
+  display: none;
+  cursor: pointer;
+  background: none;
+  text-transform: uppercase;
+  font-family: 'Bree', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  border-radius: 3px;
+  padding: 12px 10px 12px;
+  &:hover {
+    background: $white;
+    color: $black;
+  }
+  &.active {
+    background: $white;
+    color: $default;
+  }
+}
+
+/* Стилизируем область контента во вкладке */
+.resp-tab-content {
+  display: none;
+  &-active {
+    display: block;
+  }
+}
+
+.thumb{
+  position: relative;
+  &:hover{
+    position: absolute;
+    content: '\f065';
+    top: 50%;
+    left: 45%;
+    line-height: 40px;
+    font: 400 40px 'FontAwesome';
+  }
+  &:after{
+    position: absolute;
+    content: '\f065';
+    top: 50%;
+    left: 45%;
+    line-height: 40px;
+    font: 400 40px 'FontAwesome';
+  }
+}
+
+/* При разрешении < 768px скрываем табы и показываем их аккордион-версию */
+@media (max-width: 768px) {
+  .resp-accordion {
+    display: block;
+  }
+  .resp-tabs-list {
+    display: none;
+  }
+  //.resp-accordion {
+  //  margin-top: 5px;
+  //  color: $black;
+  //  font: 400 14px/18px $default-font;
+  //  text-transform: none;
+  //  padding: calc((30px - 18px) / 2) 10px;
+  //  background: lighten(desaturate(adjust-hue($default, -227.3684), 12.2581), 60.5882);
+  //  @include border-bottom-radius(0);
+  //  @include border-top-radius(6px);
+  //}
+
+
+  //.resp-tab-active{
+  //  background: $white;
+  //  color: $default;
+  //}
+}

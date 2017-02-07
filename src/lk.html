@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    //= templates/meta-link.html
+    <title>Aleba Webmaster</title>
+</head>
+<body>
+<div class="page">
+    <!--============================ HEADER =============================-->
+    <header class="">
+        <section class="well__header header-bg">
+            //= templates/header.html
+        </section>
+        <section class="well__relative">
+            //= templates/nav.html
+        </section>
+        <div class="rd-navbar-wrap hidden-sm hidden-md hidden-lg">
+            <nav class="rd-navbar">
+                <div class="rd-navbar-inner">
+                    <!-- RD Navbar Panel -->
+                    <div class="rd-navbar-panel">
+                        <div class="rd-navbar-panel-canvas"></div>
+
+                        <!-- RD Navbar Toggle -->
+                        <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span>
+                        </button>
+                        <!-- END RD Navbar Toggle -->
+
+                        <!-- RD Navbar Brand -->
+                        <div class="rd-navbar-brand">
+                            <a href="index.html" class="brand-name"><img src="images/brand.png" alt=""
+                                                                         class="brand"></a>
+                        </div>
+                        <!-- END RD Navbar Brand -->
+
+                        <!-- RD Navbar Collapse Toggle -->
+                        <button class="rd-navbar-collapse-toggle" data-rd-navbar-toggle=".rd-navbar-collapse">
+                            <span></span>
+                        </button>
+                        <div class="rd-navbar-nav-wrap">
+                            <!-- RD Navbar Nav -->
+                            <ul class="rd-navbar-nav" data-type="navbar">
+                                <li>
+                                    <a href="index.html">Главная</a>
+                                </li>
+                                <li>
+                                    <a href="">Каталог</a>
+                                </li>
+                                <li>
+                                    <a href="search-projects.html">Поиск проектов</a>
+                                </li>
+                                <li>
+                                    <a href="">Заказать проект</a>
+                                </li>
+                                <li>
+                                    <a href="all-news.html">Новости</a>
+                                </li>
+                                <li>
+                                    <a href="">Частые вопросы</a>
+                                </li>
+                                <li>
+                                    <a href="all-articles.html">Статьи</a>
+                                </li>
+                                <li>
+                                    <a href="">Контакты</a>
+                                </li>
+                            </ul>
+                            <!-- END RD Navbar Nav -->
+                        </div>
+                        <ul class="rd-navbar-collapse">
+                            <li>
+                                <a href="selection-region-city.html">Владивосток</a>
+                            </li>
+                            <li>
+                                <a href="#">Войти</a>
+                            </li>
+                            <li>
+                                <a href="registration.html">Регистрация</a>
+                            </li>
+                        </ul>
+                        <!--END RD Navbar Collapse Toggle -->
+                        <!-- RD Navbar Search Toggle -->
+                        <div class="rd-navbar-search-wrap">
+                            <button class="rd-navbar-search-toggle" data-rd-navbar-toggle=".rd-navbar-search">
+                                <span></span>
+                            </button>
+                            <div class="rd-navbar-search">
+                                <form action="" method="post">
+                                    <div class="form-group">
+                                        <input id="rd-navbar-search-input" type="text" class="form-control"
+                                               placeholder="Search">
+                                    </div>
+                                    <button type="submit" class="material-icons-search"></button>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- END RD Navbar Search Toggle -->
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--============================  MAIN  =============================-->
+    <main>
+        <!-- Хлебные крошки -->
+        <section class="well_breadcrumb">
+            <div class="container">
+                <!--=== Навигация ===-->
+                <ul xmlns:v="http://rdf.data-vocabulary.org/#" class="navigation">
+                    <li typeof="v:Breadcrumb">
+                        <a rel="v:url" property="v:title" href="index.html">Главная</a>
+                    </li>
+                    <li typeof="v:Breadcrumb">
+                        <a rel="v:url" property="v:title" class="active" href="lk.html">Личный кабинет</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section class="well2">
+            <div class="container">
+                <div class="row">
+                    <div id="lk-tabs" class="lk-tabs">
+                        <div class="col-lg-3 col-lg-push-9 col-md-3 col-md-push-9">
+                            <ul class="lk-tabs-nav box-shadow__bottom item-list">
+                                <li class="active"><a href="#lk-tabs-1">Общее</a></li>
+                                <li><a href="#lk-tabs-2">Проекты</a></li>
+                                <li><a href="#lk-tabs-3">Акции</a></li>
+                                <li><a href="#lk-tabs-4">Отзывы</a></li>
+                                <li><a href="#lk-tabs-5">Оповещения</a> <span class="notifications">99</span></li>
+                                <li><a href="#lk-tabs-6">Настройки аккаунта</a></li>
+                            </ul>
+
+                            <div class="lk-filter box-shadow__bottom offs2">
+                                <div class="row offs2">
+                                    <div class="col-md-12 col-sm-6 col-xs-12">
+                                        <div class="input-box">
+                                            <span>Материал</span>
+                                            <label>
+                                                <select name="select_style" class="select_style ">
+                                                    <option value="type-1">Материал 100</option>
+                                                    <option value="type-2">Материал 200</option>
+                                                    <option value="type-3">Материал 300</option>
+                                                    <option value="type-4">Материал 400</option>
+                                                    <option value="type-5">Материал 500</option>
+                                                    <option value="type-6">Материал 600</option>
+                                                </select>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-sm-6 col-xs-12">
+                                        <div class="input-box">
+                                            <span>&nbsp</span>
+                                            <label>
+                                                <select name="select_style" class="select_style ">
+                                                    <option value="type-1">Материал 100</option>
+                                                    <option value="type-2">Материал 200</option>
+                                                    <option value="type-3">Материал 300</option>
+                                                    <option value="type-4">Материал 400</option>
+                                                    <option value="type-5">Материал 500</option>
+                                                    <option value="type-6">Материал 600</option>
+                                                </select>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <span class="square">Площадь (в м&sup2):</span>
+
+                                        <div class="ioSlider">
+                                            <input type="text" class="range_122" name="range_122" value=""/>
+
+                                            <div class="input-box">
+                                                <ul class="square-list input-list input-list__elements-2">
+                                                    <li>
+                                                        <span>От</span>
+                                                        <label>
+                                                            <input id="range_122-to" class="range_122-to" type="number"
+                                                                   value=""
+                                                                   placeholder="50" required="">
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <span>До</span>
+                                                        <label>
+                                                            <input id="range_122-from" class="range_122-from"
+                                                                   type="number" value=""
+                                                                   placeholder="100 000" required="">
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 filter-wrap__left">
+                                        <span>Этажность:</span>
+
+                                        <div id="rooms-count" class="choice-element">
+                                            <span class="circle">1</span>
+                                            <span class="circle">2</span>
+                                            <span class="circle">3</span>
+                                            <span class="circle">4+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <span class="count-rooms">Количество комнат:</span>
+
+                                        <div class="ioSlider">
+                                            <input type="text" class="range_123" name="range_123" value=""/>
+
+                                            <div class="input-box">
+                                                <ul class="count-rooms-list input-list input-list__elements-2">
+                                                    <li>
+                                                        <span>От</span>
+                                                        <label>
+                                                            <input id="range_123-to" class="range_123-to" type="number"
+                                                                   value=""
+                                                                   placeholder="1" required="">
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <span>До</span>
+                                                        <label>
+                                                            <input id="range_123-from" class="range_123-from"
+                                                                   type="number" value=""
+                                                                   placeholder="10+" required="">
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <ul class="item-list checkbox-group-list">
+                                        <li class="col-md-12 col-sm-4 col-xs-4">
+                                            <div class="checkbox-group">
+                                                <input type="checkbox" id="checkbox1" name="type">
+                                                <label for="checkbox1">Гараж</label>
+                                            </div>
+                                        </li>
+                                        <li class="col-md-12 col-sm-4 col-xs-4">
+                                            <div class="checkbox-group">
+                                                <input type="checkbox" id="checkbox2" name="type">
+                                                <label for="checkbox2">Бассейн</label>
+                                            </div>
+                                        </li>
+                                        <li class="col-md-12 col-sm-4 col-xs-4">
+                                            <div class="checkbox-group">
+                                                <input type="checkbox" id="checkbox3" name="type">
+                                                <label for="checkbox3">Мансарда</label>
+                                            </div>
+                                        </li>
+                                        <li class="col-md-12 col-sm-4 col-xs-4">
+                                            <div class="checkbox-group">
+                                                <input type="checkbox" id="checkbox4" name="type">
+                                                <label for="checkbox4">Веранда</label>
+                                            </div>
+                                        </li>
+                                        <li class="col-md-12 col-sm-4 col-xs-4">
+                                            <div class="checkbox-group">
+                                                <input type="checkbox" id="checkbox5" name="type">
+                                                <label for="checkbox5">Цоколь</label>
+                                            </div>
+                                        </li>
+                                        <li class="col-md-12 col-sm-4 col-xs-4">
+                                            <div class="checkbox-group">
+                                                <input type="checkbox" id="checkbox6" name="type">
+                                                <label for="checkbox6">Подвал</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-9 col-lg-pull-3 col-md-9 col-md-pull-3">
+                            <!--=== Контент 1 таба Профиль ====-->
+                            <div id="lk-tabs-1" class="lk-tabs-nav_cnt lk-tab1">
+                                <h2>Общее</h2>
+                                <section>
+                                    <form action="lk-tab1">
+                                        <!--=== Основной офис или филиал ====-->
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                Логотип организации:
+                                                <div class="upload-img-wrap">
+                                                    <!--<input type="file" class="upload-file">-->
+
+                                                    <div class="fileform">
+                                                        <div class="selectbutton">Выбрать файл</div>
+                                                        <input id="upload" type="file" name="upload"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8 input-list">
+                                                <div class="row">
+                                                    <div class="col-md-12 input-box">
+                                                        <span>Название организации:</span>
+                                                        <label>
+                                                            <input type="text" value=""
+                                                                   placeholder="Введите название организации"
+                                                                   required="">
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6 col-sm-6 col-xs-12 input-box">
+                                                        <span>Телефон:</span>
+                                                        <label>
+                                                            <input type="tel" placeholder="+7 000 000 00 00"
+                                                                   required="">
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12 input-box">
+                                                        <span>Дополнительный телефон:</span>
+                                                        <label>
+                                                            <input type="tel" placeholder="+7 000 000 00 00"
+                                                                   required="">
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6 col-sm-6 col-xs-12 input-box">
+                                                        <span>Область:</span>
+                                                        <label>
+                                                            <select name="select_style" class="select_style ">
+                                                                <option value="type-1">Область 1</option>
+                                                                <option value="type-2">Область 2</option>
+                                                                <option value="type-3">Область 3</option>
+                                                                <option value="type-4">Область 4</option>
+                                                                <option value="type-5">Область 5</option>
+                                                                <option value="type-6">Область 6</option>
+                                                            </select>
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12 input-box">
+                                                        <span>Город:</span>
+                                                        <label>
+                                                            <select name="select_style" class="select_style ">
+                                                                <option value="type-1">Город 1</option>
+                                                                <option value="type-2">Город 2</option>
+                                                                <option value="type-3">Город 3</option>
+                                                                <option value="type-4">Город 4</option>
+                                                                <option value="type-5">Город 5</option>
+                                                                <option value="type-6">Город 6</option>
+                                                            </select>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6 col-sm-6 col-xs-12 input-box">
+                                                        <span>Улица:</span>
+                                                        <label>
+                                                            <input type="tel" placeholder="Введите название"
+                                                                   required="">
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12 input-box">
+                                                        <span>Станция метро:</span>
+                                                        <label>
+                                                            <select name="select_style" class="select_style ">
+                                                                <option value="type-1">Метро 1</option>
+                                                                <option value="type-2">Метро 2</option>
+                                                                <option value="type-3">Метро 3</option>
+                                                                <option value="type-4">Метро 4</option>
+                                                                <option value="type-5">Метро 5</option>
+                                                                <option value="type-6">Метро 6</option>
+                                                            </select>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-3 col-sm-3 col-xs-6 input-box">
+                                                        <span>Дом:</span>
+                                                        <label>
+                                                            <input type="tel" placeholder="№" required="">
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-md-3 col-sm-3 col-xs-6 input-box">
+                                                        <span>Строение:</span>
+                                                        <label>
+                                                            <input type="tel" placeholder="№" required="">
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-md-3 col-sm-3 col-xs-6 input-box">
+                                                        <span>Корпус:</span>
+                                                        <label>
+                                                            <input type="tel" placeholder="№" required="">
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-md-3 col-sm-3 col-xs-6 input-box">
+                                                        <span>Офис:</span>
+                                                        <label>
+                                                            <input type="tel" placeholder="№" required="">
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12 input-box">
+                                                        <span>Описание:</span>
+                                                    <textarea name="" placeholder="Введите текст описания..."
+                                                              maxlength="1000"></textarea>
+
+                                                        <p class="simvol-limit">Максимум 1000 символов</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!--=== Дополнительный филиал ====-->
+                                        <div class="row">
+                                            <div class="col-md-8 col-md-push-4 well5 ">
+                                                <div class="filial input-list">
+                                                    <div class="row">
+                                                        <div class="col-md-12 input-box">
+                                                            <h3>Филиал</h3>
+                                                            <a href="" class="delete-filial">Удалить этот филиал</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6 col-sm-6 col-xs-12 input-box">
+                                                            <span>Телефон:</span>
+                                                            <label>
+                                                                <input type="tel" placeholder="+7 000 000 00 00"
+                                                                       required="">
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-md-6 col-sm-6 col-xs-12 input-box">
+                                                            <span>Дополнительный телефон:</span>
+                                                            <label>
+                                                                <input type="tel" placeholder="+7 000 000 00 00"
+                                                                       required="">
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6 col-sm-6 col-xs-12 input-box">
+                                                            <span>Область:</span>
+                                                            <label>
+                                                                <select name="select_style" class="select_style ">
+                                                                    <option value="type-1">Область 1</option>
+                                                                    <option value="type-2">Область 2</option>
+                                                                    <option value="type-3">Область 3</option>
+                                                                    <option value="type-4">Область 4</option>
+                                                                    <option value="type-5">Область 5</option>
+                                                                    <option value="type-6">Область 6</option>
+                                                                </select>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-md-6 col-sm-6 col-xs-12 input-box">
+                                                            <span>Город:</span>
+                                                            <label>
+                                                                <select name="select_style" class="select_style ">
+                                                                    <option value="type-1">Город 1</option>
+                                                                    <option value="type-2">Город 2</option>
+                                                                    <option value="type-3">Город 3</option>
+                                                                    <option value="type-4">Город 4</option>
+                                                                    <option value="type-5">Город 5</option>
+                                                                    <option value="type-6">Город 6</option>
+                                                                </select>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6 col-sm-6 col-xs-12 input-box">
+                                                            <span>Улица:</span>
+                                                            <label>
+                                                                <input type="tel" placeholder="Введите название"
+                                                                       required="">
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-md-6 col-sm-6 col-xs-12 input-box">
+                                                            <span>Станция метро:</span>
+                                                            <label>
+                                                                <select name="select_style" class="select_style ">
+                                                                    <option value="type-1">Метро 1</option>
+                                                                    <option value="type-2">Метро 2</option>
+                                                                    <option value="type-3">Метро 3</option>
+                                                                    <option value="type-4">Метро 4</option>
+                                                                    <option value="type-5">Метро 5</option>
+                                                                    <option value="type-6">Метро 6</option>
+                                                                </select>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-3 col-sm-3 col-xs-6 input-box">
+                                                            <span>Дом:</span>
+                                                            <label>
+                                                                <input type="tel" placeholder="№" required="">
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-3 col-xs-6 input-box">
+                                                            <span>Строение:</span>
+                                                            <label>
+                                                                <input type="tel" placeholder="№" required="">
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-3 col-xs-6 input-box">
+                                                            <span>Корпус:</span>
+                                                            <label>
+                                                                <input type="tel" placeholder="№" required="">
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-3 col-xs-6 input-box">
+                                                            <span>Офис:</span>
+                                                            <label>
+                                                                <input type="tel" placeholder="№" required="">
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-12 input-box">
+                                                            <span>Описание:</span>
+                                                    <textarea name="" placeholder="Введите текст описания..."
+                                                              maxlength="1000"></textarea>
+
+                                                            <p class="simvol-limit">Максимум 1000 символов</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!--=== Добавить филиал ====-->
+                                        <div class="row well2">
+                                            <div class="col-md-8 col-md-push-4">
+                                                <div class="add-filial">
+                                                    <div class="plus"></div>
+                                                    <a href="">Добавить филиал</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!--=== Кнопка сохранения ====-->
+                                        <div class="row">
+                                            <div class="col-md-8 col-md-push-4">
+                                                <div class="btm-wrap well3 well3-mod1">
+                                                    <batton type="submit" class="btn1 btn-style1 btn-effect1 offs2">
+                                                        Сохранить изменения
+                                                    </batton>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </section>
+                            </div>
+
+
+                            <!--=== Контент 2 таба О себе ====-->
+                            <div id="lk-tabs-2" class="lk-tab2">
+                                <h2>Проекты</h2>
+
+                                <section class="offs2">
+                                    <div class="line-wrap">
+                                        <a href="add-project.html" class="btn1 btn-style1 btn-effect1 offs2">+ Добавить
+                                            проекты</a>
+                                    </div>
+                                </section>
+
+                                <section class="block-sort">
+                                    <div class="count-project">
+                                        <span>4 832</span> проекта
+                                    </div>
+                                    <div class="show-on">
+                                        <span>Показывать:</span>
+
+                                        <div id="show-on" class="show-on-parameter inline-list">
+                                            <span class="active">все</span>
+                                            <span>акции</span>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section class="block-sort">
+                                    <div class="show-page">
+                                        <span>Показывать:</span>
+
+                                        <div id="show-page" class="show-page-parameter inline-list">
+                                            <span class="active">15</span>
+                                            <span>30</span>
+                                            <span>90</span>
+                                        </div>
+                                    </div>
+                                    <div class="sorted-by">
+                                        <span>Сортировать по:</span>
+                                        <ul class="sorted-by-list inline-list">
+                                            <li class="sorted-by-list_cnt">
+                                                <a>
+                                                    <p>Дате</p>
+                                                    <em class="sorted_trigger-up"></em>
+                                                </a>
+                                            </li>
+                                            <li class="sorted-by-list_cnt">
+                                                <a>
+                                                    <p>Категориям</p>
+                                                    <em class="sorted_trigger-up"></em>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </section>
+
+                                <section class="offs1">
+                                    <div class="row stock-project customScroll-list">
+                                        <!--=== 1 li ====-->
+                                        <div class="col-md-4 col-sm-6 col-xs-6 customScroll-div">
+                                            //= templates/customScroll-forma-lk.html
+                                        </div>
+                                        <!--=== 2 li ====-->
+                                        <div class="col-md-4 col-sm-6 col-xs-6 customScroll-div">
+                                            //= templates/customScroll-forma-lk.html
+                                        </div>
+                                        <!--=== 3 li ====-->
+                                        <div class="col-md-4 col-sm-6 col-xs-6 customScroll-div">
+                                            //= templates/customScroll-forma-lk.html
+                                        </div>
+                                        <!--=== 4 li ====-->
+                                        <div class="col-md-4 col-sm-6 col-xs-6 customScroll-div">
+                                            //= templates/customScroll-forma-lk.html
+                                        </div>
+                                        <!--=== 5 li ====-->
+                                        <div class="col-md-4 col-sm-6 col-xs-6 customScroll-div">
+                                            //= templates/customScroll-forma-lk.html
+                                        </div>
+                                        <!--=== 6 li ====-->
+                                        <div class="col-md-4 col-sm-6 col-xs-6 customScroll-div">
+                                            //= templates/customScroll-forma-lk.html
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <!-- Пагинация -->
+                                <section class="well4">
+                                    <div class="container">
+                                        //= templates/pagination.html
+                                    </div>
+                                </section>
+                            </div>
+
+
+                            <!--=== Контент 3 таба Услуги ====-->
+                            <div id="lk-tabs-3" class="lk-tab3">
+                                <h2>Акции</h2>
+
+                                Нет страницы в макете
+
+                            </div>
+
+
+                            <!--=== Контент 4 таба Мастера ====-->
+                            <div id="lk-tabs-4" class="lk-tab4">
+                                <h2>Отзывы (всего 556)</h2>
+                                <!--=== Блок Сортировки ====-->
+                                <section>
+                                    <div class="sorted-by">
+                                        <span>Сортировать по:</span>
+                                        <ul class="sorted-by-list inline-list">
+                                            <li class="sorted-by-list_cnt">
+                                                <a>
+                                                    <p>Дате</p>
+                                                    <em class="sorted_trigger-up"></em>
+                                                </a>
+                                            </li>
+                                            <li class="sorted-by-list_cnt">
+                                                <a>
+                                                    <p>Категориям</p>
+                                                    <em class="sorted_trigger-up"></em>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </section>
+                                <!--=== Отзывы ====-->
+                                <section>
+                                    <ul class="coment-wrap item-list">
+                                        <li>
+                                            <div class="coment box-shadow__bottom">
+                                                //= templates/coment-user.html
+                                                <div class="rateit-wrap">
+                                                    <span>Поставил оценку:</span>
+                                                    //= templates/rateit-wrap.html
+                                                </div>
+                                                //= templates/coment-footer.html
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="coment box-shadow__bottom">
+                                                //= templates/coment-user.html
+                                                <div class="rateit-wrap">
+                                                    <span>Поставил оценку:</span>
+                                                    //= templates/rateit-wrap.html
+                                                </div>
+                                                //= templates/coment-footer.html
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="coment box-shadow__bottom">
+                                                //= templates/coment-user.html
+                                                <div class="rateit-wrap">
+                                                    <span>Поставил оценку:</span>
+                                                    //= templates/rateit-wrap.html
+                                                </div>
+                                                //= templates/coment-footer.html
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="coment box-shadow__bottom">
+                                                //= templates/coment-user.html
+                                                <div class="rateit-wrap">
+                                                    <span>Поставил оценку:</span>
+                                                    //= templates/rateit-wrap.html
+                                                </div>
+                                                //= templates/coment-footer.html
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="coment box-shadow__bottom">
+                                                //= templates/coment-user.html
+                                                <div class="rateit-wrap">
+                                                    <span>Поставил оценку:</span>
+                                                    //= templates/rateit-wrap.html
+                                                </div>
+                                                //= templates/coment-footer.html
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="coment box-shadow__bottom">
+                                                //= templates/coment-user.html
+                                                <div class="rateit-wrap">
+                                                    <span>Поставил оценку:</span>
+                                                    //= templates/rateit-wrap.html
+                                                </div>
+                                                //= templates/coment-footer.html
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </section>
+                                <!--=== Пагинация ====-->
+                                <section class="well4">
+                                    <div class="container">
+                                        //= templates/pagination.html
+                                    </div>
+                                </section>
+                            </div>
+
+                            <!--=== Контент 5 таба Оповещения ====-->
+                            <div id="lk-tabs-5" class="lk-tab5">
+                                <h2>Оповещения (всего 556)</h2>
+
+                                <!--=== Блок Сортировок ====-->
+                                <section class="block-sort">
+                                    <div class="sorted-on">
+                                        <span>Сортировать по:</span>
+
+                                        <div id="sorted-on" class="sorted-on-parameter inline-list">
+                                            <span>Статьям</span>
+                                            <span>Новостям</span>
+                                            <span>Проектам</span>
+                                            <span class="active">Все</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="sorted-by">
+                                        <span>Сортировать по:</span>
+                                        <ul class="sorted-by-list inline-list">
+                                            <li class="sorted-by-list_cnt">
+                                                <a>
+                                                    <p>Дате</p>
+                                                    <em class="sorted_trigger-up"></em>
+                                                </a>
+                                            </li>
+                                            <li class="sorted-by-list_cnt">
+                                                <a>
+                                                    <p>Категориям</p>
+                                                    <em class="sorted_trigger-up"></em>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </section>
+
+                                <!--=== Отзывы ====-->
+                                <section>
+                                    <ul class="coment-wrap item-list">
+                                        <li>
+                                            <div class="coment box-shadow__bottom">
+                                                //= templates/coment-user.html
+                                                <div class="rateit-wrap">
+                                                    <span>Поставил оценку:</span>
+                                                    //= templates/rateit-wrap.html
+                                                </div>
+                                                //= templates/coment-footer.html
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="coment box-shadow__bottom">
+                                                //= templates/coment-user.html
+                                                <div class="rateit-wrap">
+                                                    <span>Поставил оценку:</span>
+                                                    //= templates/rateit-wrap.html
+                                                </div>
+                                                //= templates/coment-footer.html
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="coment box-shadow__bottom" style="background: #FFF9DF">
+                                                <!--=== Дата публикации ===-->
+                                                <p class="date-publist">
+                                                    <time datetime="2016-12-31">30 сентября 2015</time>
+                                                </p>
+                                                <!--=== Автор отзыва ===-->
+                                                <a href="" class="autor-coment">Константин Константинопольский</a>
+
+                                                <div class="user-telephone">
+                                                    <a href="tel:#">Телефон:
+                                                        <span class="tel">+7 000 000 00 00</span>
+                                                    </a>
+                                                </div>
+
+
+                                                <p class="application-project">
+                                                    Заявка на <span>Строительный комплект №2 (АС+П+К)</span>
+                                                </p>
+
+                                                <a href="" class="project-section">Проект современного дома из
+                                                    газобетона с гаражом и мансардой</a>
+
+
+                                                <p class="CommentToApplication">
+                                                    Комметарий к заявке:
+                                                </p>
+
+                                                <p class="text-coment well2-mod1">
+                                                    Я думал, намного лучше будет… Намного лучше будет это все. И очень
+                                                    плохая музыка, просто
+                                                    очень плохая музыка! Я думал, намного лучше это все будет. Сколько
+                                                    раз сюда ходил — было
+                                                    намного лучше, но на этот раз как-то не удалось. Во-первых, народу
+                                                    мало, музыка — не очень
+                                                </p>
+
+
+                                            </div>
+                                        </li>
+
+
+                                    </ul>
+                                </section>
+
+                                <!--=== Пагинация ====-->
+                                <section class="well4">
+                                    <div class="container">
+                                        //= templates/pagination.html
+                                    </div>
+                                </section>
+                            </div>
+
+                            <!--=== Контент 6 таба Настройки аккаунта ====-->
+                            <div id="lk-tabs-6" class="lk-tab6">
+                                <h2>Настройки аккаунта</h2>
+                                <!--=== Блок inputs и checkbox ====-->
+                                <section>
+                                    <div class="row">
+                                        <ul class="col-md-6 col-sm-6 col-xs-12 input-list item-list ">
+                                            <li class="input-box">
+                                                <span>Логин:</span>
+                                                <label class="success">
+                                                    <input type="text" value="" placeholder="LogIn" required="">
+                                                </label>
+                                            </li>
+                                            <li class="input-box">
+                                                <span>Электронная почта:</span>
+                                                <label class="warning">
+                                                    <input type="email" value="" placeholder="mail@mail.ru" required="">
+                                                </label>
+                                            </li>
+                                            <li class="input-box">
+                                                <span>Пароль:</span>
+                                                <label class="error">
+                                                    <input type="password" value="" placeholder="Password" required="">
+                                                </label>
+                                            </li>
+                                            <li class="input-box">
+                                                <span>Повторите пароль:</span>
+                                                <label class="error">
+                                                    <input type="password" value="" placeholder="Password" required="">
+                                                </label>
+                                            </li>
+                                        </ul>
+
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <ul class="item-list checkboxGroups">
+                                                <li>
+                                                    <div class="checkbox-group">
+                                                        <input type="checkbox" id="lk-checkbox1" name="type">
+                                                        <label for="lk-checkbox1">Получать сообщения об отзывах</label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="checkbox-group">
+                                                        <input type="checkbox" id="lk-checkbox2" name="type">
+                                                        <label for="lk-checkbox2">Получать сообщения об оценках</label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="checkbox-group">
+                                                        <input type="checkbox" id="lk-checkbox3" name="type">
+                                                        <label for="lk-checkbox3">Получать сообщения о заявках</label>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!--=== Кнопка сохранения ====-->
+                                <section>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="btm-wrap well3 well3-mod1">
+                                                <batton type="submit" class="btn1 btn-style1 btn-effect1 offs2">
+                                                    Сохранить изменения
+                                                </batton>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!--============================ FOOTER =============================-->
+    <footer>
+        //= templates/footer.html
+    </footer>
+</div>
+
+
+<!--coded by AlexB.-->
+</body>
+</html>
+<!--Links-->
+<link rel="stylesheet" href="css/rd-navbar.css"/>
+<link rel="stylesheet" href="css/rateit.css"/>
+<link rel="stylesheet" href="css/mCustomScrollbar.css"/>
+<link rel="stylesheet" href="css/ion.rangeSlider.css"/>
+<link rel="stylesheet" href="css/ion.rangeSlider.skinHTML5.css"/>
+<link rel="stylesheet" href="css/styles.css">
+<!--JS-->
+<script type="text/javascript" src="js/core.js"></script>
+<script type="text/javascript" src="js/components.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
